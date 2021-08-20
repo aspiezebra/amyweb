@@ -88,6 +88,12 @@ import { AmysInjuriesComponent } from './amys-injuries/amys-injuries.component';
 import { AmysAcuteDiagnosesComponent } from './amys-acute-diagnoses/amys-acute-diagnoses.component';
 import { HenochSchonleinPurpuraComponent } from './henoch-schonlein-purpura/henoch-schonlein-purpura.component';
 import { HenochschonleinpurpuraComponent } from './henochschonleinpurpura/henochschonleinpurpura.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { Form1Component } from './form1/form1.component';
+import { Form2Component } from './form2/form2.component';
+import { Form3Component } from './form3/form3.component';
+import { Form4Component } from './form4/form4.component';
+import { FormsComponent } from './forms/forms.component';
 
 @NgModule({
   declarations: [
@@ -176,7 +182,13 @@ import { HenochschonleinpurpuraComponent } from './henochschonleinpurpura/henoch
     AmysInjuriesComponent,
     AmysAcuteDiagnosesComponent,
     HenochSchonleinPurpuraComponent,
-    HenochschonleinpurpuraComponent
+    HenochschonleinpurpuraComponent,
+    SignUpComponent,
+    Form1Component,
+    Form2Component,
+    Form3Component,
+    Form4Component,
+    FormsComponent
   ],
   imports: [
     BrowserModule,

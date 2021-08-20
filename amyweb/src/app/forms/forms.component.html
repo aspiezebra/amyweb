@@ -1,0 +1,72 @@
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+</script>
+
+<body>
+
+    <p>forms works!</p>
+
+
+    <div ng-app="myApp" ng-controller="formCtrl">
+        <form novalidate>
+            First Name:<br>
+            <input type="text" ng-model="user.firstName"><br> Last Name:<br>
+            <input type="text" ng-model="user.lastName">
+            <br><br>
+            <button ng-click="reset()">RESET</button>
+        </form>
+        <p>form = {{user}}</p>
+        <p>master = {{master}}</p>
+    </div>
+
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('formCtrl', function($scope) {
+            $scope.master = {
+                firstName: "John",
+                lastName: "Doe"
+            };
+            $scope.reset = function() {
+                $scope.user = angular.copy($scope.master);
+            };
+            $scope.reset();
+        });
+    </script>
+
+
+
+    <input type="text" ng-model="firstname">
+    <form>
+        First Name: <input type="text" ng-model="firstname">
+    </form>
+
+    <h1>You entered: {{firstname}}</h1>
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('formCtrl', function($scope) {
+            $scope.firstname = "John";
+        });
+    </script>
+    <h2>HTML Forms</h2>
+
+    <form action="/formdata1.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <h1>Angular Router</h1>
+    <nav>
+        <a routerLink="/form1" routerLinkActive="active">Form 1</a>
+        <a routerLink="/form2" routerLinkActive="active">Form 2</a>
+        <a routerLink="/form3" routerLinkActive="active">Form 3</a>
+        <a routerLink="/form4" routerLinkActive="active">Form 4</a>
+        <a routerLink="/sign-up" routerLinkActive="active">sign-up</a>
+    </nav>
+    <form action="action.php" method="post">
+        <p>Your name: <input type="text" name="name" /></p>
+        <p>Your age: <input type="text" name="age" /></p>
+        <p><input type="submit" /></p>
+    </form>
+    <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+</body>
