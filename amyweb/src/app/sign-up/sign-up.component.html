@@ -13,8 +13,7 @@
             <br><br>
             <button ng-click="reset()">RESET</button>
         </form>
-        <p>form = {{user}}</p>
-        <p>master = {{master}}</p>
+
     </div>
 
     <script>
@@ -38,7 +37,6 @@
         First Name: <input type="text" ng-model="firstname">
     </form>
 
-    <h1>You entered: {{firstname}}</h1>
     <script>
         var app = angular.module('myApp', []);
         app.controller('formCtrl', function($scope) {

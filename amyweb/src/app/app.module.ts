@@ -94,6 +94,7 @@ import { Form2Component } from './form2/form2.component';
 import { Form3Component } from './form3/form3.component';
 import { Form4Component } from './form4/form4.component';
 import { FormsComponent } from './forms/forms.component';
+import { FillOutFormComponent } from './fill-out-form/fill-out-form.component';
 
 @NgModule({
   declarations: [
@@ -188,7 +189,8 @@ import { FormsComponent } from './forms/forms.component';
     Form2Component,
     Form3Component,
     Form4Component,
-    FormsComponent
+    FormsComponent,
+    FillOutFormComponent
   ],
   imports: [
     BrowserModule,

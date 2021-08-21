@@ -57,6 +57,7 @@ import { Form2Component } from './form2/form2.component';
 import { Form3Component } from './form3/form3.component';
 import { Form4Component } from './form4/form4.component';
 import { FormsComponent } from './forms/forms.component';
+import { FillOutFormComponent } from './fill-out-form/fill-out-form.component';
 
 
 const routes: Routes = [
@@ -85,6 +86,7 @@ const routes: Routes = [
   { path: 'Bubbles', component: BubblesComponent },
   { path: 'Ehlers-Danlos', component: EhlersDanlosComponent },
   { path: 'Twins', component: TwinsComponent },
+  { path: 'Fill-out-forms', component: FillOutFormComponent },
   { path: 'twosets', component: TwosetsoftwinsComponent },
   { path: 'autism', component: AutismComponent },
   { path: 'SleepApnea', component: SleepApneaComponent },
